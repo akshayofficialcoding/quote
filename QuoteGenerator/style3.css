@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #43a680;
+}
+
+.container {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.container h2 {
+  font-family: "Dancing Script", cursive;
+  word-break: break-all;
+  letter-spacing: 0.3rem;
+}
+
+.wrapper {
+  width: 600px;
+  border-radius: 15px;
+  background: #fff;
+  padding: 30px 30px 25px;
+}
+
+.wrapper header {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wrapper .content {
+  margin: 35px 0;
+}
+
+.content .quote-area {
+  display: flex;
+  justify-content: center;
+}
+.quote-area i {
+  font-size: 25px;
+}
+.quote-area .quote {
+  font-size: 22px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.quote-area i:first-child {
+  margin: -5px 10px 0 0;
+  color: #43a680;
+}
+.quote-area i:last-child {
+  display: flex;
+  align-items: flex-end;
+  color: #43a680;
+  margin: 5px 0 3px 10px;
+}
+.content .author {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.author span:first-child {
+  margin: -7px 5px 0 0;
+  font-family: monospace;
+}
+
+.words .length {
+  margin-left: 10px;
+  font-weight: 600;
+}
+.words {
+  text-align: center;
+}
+
+.wrapper .buttons {
+  border-top: 1px solid #ccc;
+}
+
+.buttons .features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.features ul {
+  display: flex;
+}
+
+.features ul li {
+  list-style-type: none;
+  margin: 0 5px;
+  height: 47px;
+  width: 47px;
+  display: flex;
+  color: #43a680;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #43a680;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.features ul li:hover {
+  background: #43a680;
+  color: #fff;
+}
+
+.features button {
+  border: 2px solid #43a680;
+  background: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #43a680;
+  transition: 0.3s all ease;
+}
+.features button:hover {
+  background: #43a680;
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background: #413c69;
+  }
+  .container h2 {
+    font-family: "Dancing Script", cursive;
+    word-break: break-all;
+    letter-spacing: 0.3rem;
+    color: #fff;
+  }
+  .wrapper {
+    margin: 0 10px;
+    width: 480px;
+  }
+  .wrapper header {
+    color: rgb(67, 67, 67);
+  }
+  .quote-area .quote {
+    font-size: 20px;
+  }
+  .author span:first-child {
+    margin: -5px 5px 0 0;
+  }
+  .content .author {
+    font-size: 16px;
+  }
+  .quote-area i {
+    font-size: 20px;
+  }
+  .features ul li,
+  .features button {
+    color: #413c69;
+    border: 2px solid #413c69;
+  }
+
+  .features ul li:hover {
+    background: #413c69;
+  }
+
+  .features button:hover {
+    background: #413c69;
+    color: #fff;
+  }
+  .quote-area i:first-child,
+  .quote-area i:last-child {
+    color: #413c69;
+  }
+}
+@media screen and (max-width: 580px) {
+  body {
+    background: #43a680;
+  }
+
+  .container h2 {
+    color: #000;
+  }
+
+  .wrapper {
+    width: 380px;
+  }
+
+  .features ul li,
+  .features button {
+    color: #43a680;
+    border: 2px solid #43a680;
+  }
+
+  .features ul li:hover {
+    background: #43a680;
+  }
+
+  .features button:hover {
+    background: #43a680;
+    color: #fff;
+  }
+
+  .quote-area i:first-child,
+  .quote-area i:last-child {
+    color: #43a680;
+  }
+}
